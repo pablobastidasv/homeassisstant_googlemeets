@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet -> Home Assistant",
+  "version": "1.0.0",
+  "description": "Turns on a Home Assistant input_boolean while a Google Meet call is open in any tab, and turns it off otherwise.",
+  "permissions": ["tabs", "storage"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Google Meet -> Home Assistant"
+  }
+}

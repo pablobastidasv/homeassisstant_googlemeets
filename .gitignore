@@ -1,0 +1,13 @@
+# Packed extension artifacts
+*.crx
+*.pem
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node (not used today, ignored just in case)
+node_modules/

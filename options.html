@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google Meet -> Home Assistant</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Google Meet -> Home Assistant</h1>
+      <p class="hint">
+        While any tab is on a Google Meet call, the helper is turned
+        <code>on</code>. Otherwise it is turned <code>off</code>.
+      </p>
+
+      <label for="haUrl">Home Assistant URL</label>
+      <input id="haUrl" type="url" placeholder="http://homeassistant.local:8123" autocomplete="off" />
+
+      <label for="haToken">Long-lived access token</label>
+      <input id="haToken" type="password" placeholder="eyJhbGciOi..." autocomplete="off" />
+
+      <label for="entityId">Input boolean entity ID</label>
+      <input id="entityId" type="text" placeholder="input_boolean.google_meet" autocomplete="off" />
+
+      <div class="actions">
+        <button id="save" type="button">Save</button>
+        <button id="test" type="button" class="secondary">Test connection</button>
+      </div>
+
+      <p id="status" class="status" role="status"></p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
